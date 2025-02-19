@@ -1,8 +1,14 @@
 [
   {
-    "firstName": "Tuvshinsaikhan",
-    "lastName": "Shinebayr",
-    "userName": "Tuvshuu",
+    "firstname": "Tuvshinsaikhan",
+    "lastname": "Shinebayr",
+    "username": "Tuvshuu",
     "password": "tuvshuu123"
+  },
+  {
+    "firstame": "Tuvshinsaikhan",
+    "lastname": "Shinebayr",
+    "username": "Tuvshuu",
+    "password": "tuvshuu12"
   }
 ]
