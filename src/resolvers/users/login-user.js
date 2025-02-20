@@ -3,7 +3,7 @@ import fs, { readFileSync } from "fs";
 import jwt from "jsonwebtoken";
 
 export const loginUsers = (req, res) => {
-  const {} = req.body;
+  const {username, password} = req.body;
   const rawDataUsers = fs.readFileSync("src/db/users.json");
   const users = JSON.parse(rawDataUsers);
 
