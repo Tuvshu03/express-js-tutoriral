@@ -3,7 +3,6 @@ import fs, { readFileSync } from "fs";
 import jwt from "jsonwebtoken";
 
 export const loginUsers = (req, res) => {
-  const {username, password} = req.body;
   const rawDataUsers = fs.readFileSync("src/db/users.json");
   const users = JSON.parse(rawDataUsers);
 
@@ -11,7 +10,7 @@ export const loginUsers = (req, res) => {
 
   if (!user) return res.json({ message: "Username or Password did not match" });
   if (user.password !== password)
-    return res.json({ message: "Username or Password did not match" });
+    // return res.send({ message: "Username or Password did not match" });
   var token = jwt.sign(user, "mash-nuuts");
   res.json({ token: token });
 };
